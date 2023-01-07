@@ -10,6 +10,16 @@
   font-family: Prociono, Georgia, "Times New Roman", Times, serif;
 }
 
+body {
+  background: #eadbc3;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+}
+
 h1 {
-  font-size: 32pt;
+  font-size: 64pt;
+  color: #5b4420;
+  text-align: right;
+  max-width: 40%;
 }
