@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Prociono";
+  src: url("/assets/prociono/Prociono-Regular-webfont.eot");
+  src: url("/assets/prociono/Prociono-Regular-webfont.woff") format("woff"),
+    url("/assets/prociono/Prociono-Regular-webfont.ttf") format("truetype"),
+    url("/assets/prociono/Prociono-Regular-webfont.svg") format("svg");
+}
+
+:root {
+  font-family: Prociono, Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 32pt;
+}
