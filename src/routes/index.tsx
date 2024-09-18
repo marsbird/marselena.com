@@ -1,11 +1,13 @@
-import { createSignal } from 'solid-js';
+import { createSignal, onCleanup } from 'solid-js';
 
 export default function Home() {
   const [bool, setBool] = createSignal(false);
 
-  setInterval(() => {
-    setBool((val) => !val);
+  const interval = setInterval(() => {
+    setBool(!bool());
   }, 750);
+
+  onCleanup(() => clearInterval(interval));
 
   return <main>marselena sequoia - software engineer{bool() ? '_' : ''}</main>;
 }
