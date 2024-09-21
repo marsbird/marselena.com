@@ -12,10 +12,14 @@ export default function Home() {
   return (
     <main class='flex justify-center items-center h-screen'>
       <div>
-        <h1 class='font-satoshi font-bold leading-10 text-5xl'>
-          marselena <br /> sequoia
+        <h1
+          class='font-satoshi font-bold leading-10 text-5xl'
+          aria-label='Marselena Sequoia'
+        >
+          marselena <br />
+          <span class='relative left-[2px]'>sequoia</span>
         </h1>
-        <h2 class='font-satoshi text-xl mt-4'>
+        <h2 class='font-satoshi text-xl mt-4' aria-label='software engineer'>
           software engineer{bool() ? '_' : ''}
         </h2>
       </div>
