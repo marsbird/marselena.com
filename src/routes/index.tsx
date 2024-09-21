@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <main class='flex justify-center items-center h-dvh'>
-      <div>
+      <div class='relative bottom-5'>
         <h1
           class='font-satoshi font-bold leading-10 text-5xl'
           aria-label='Marselena Sequoia'
