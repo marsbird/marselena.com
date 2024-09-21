@@ -1,4 +1,4 @@
-@import url("/fonts/satoshi.css");
+@import url("../public/fonts/satoshi.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
