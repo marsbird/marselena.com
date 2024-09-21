@@ -1,3 +1,4 @@
+@import url("/fonts/satoshi.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,7 @@
 :root {
   --background-rgb: 214, 219, 220;
   --foreground-rgb: 0, 0, 0;
+  font-size: 24px;
 }
 
 @media (prefers-color-scheme: dark) {
