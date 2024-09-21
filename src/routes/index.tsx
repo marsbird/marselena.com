@@ -19,7 +19,10 @@ export default function Home() {
           marselena <br />
           <span class='relative left-[2px]'>sequoia</span>
         </h1>
-        <h2 class='font-satoshi text-xl mt-4' aria-label='software engineer'>
+        <h2
+          class='font-satoshi text-xl mt-4 relative left-[2px]'
+          aria-label='software engineer'
+        >
           software engineer{bool() ? '_' : ''}
         </h2>
       </div>
