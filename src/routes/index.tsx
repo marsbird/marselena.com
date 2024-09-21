@@ -10,7 +10,7 @@ export default function Home() {
   onCleanup(() => clearInterval(interval));
 
   return (
-    <main class='flex justify-center items-center h-screen'>
+    <main class='flex justify-center items-center h-dvh'>
       <div>
         <h1
           class='font-satoshi font-bold leading-10 text-5xl'
