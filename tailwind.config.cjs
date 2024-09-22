@@ -2,10 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
-    extend: {
-      fontFamily: {
-        satoshi: ['Satoshi-Variable', 'sans-serif'],
-      },
+    fontFamily: {
+      satoshi: ['Satoshi-Variable', 'sans-serif'],
+    },
+    colors: {
+      light: '#d6dbdc',
+      dark: '#242125',
     },
   },
   plugins: [],

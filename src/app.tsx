@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Router
       root={(props) => (
-        <main class='flex h-dvh items-center justify-center font-satoshi'>
+        <main class='flex h-dvh items-center justify-center bg-light font-satoshi text-dark dark:bg-dark dark:text-light'>
           <Suspense>{props.children}</Suspense>
         </main>
       )}
