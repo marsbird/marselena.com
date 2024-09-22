@@ -10,17 +10,17 @@ export default function Home() {
   onCleanup(() => clearInterval(interval));
 
   return (
-    <main class='flex justify-center items-center h-dvh'>
+    <main class='flex h-dvh items-center justify-center font-satoshi'>
       <div class='relative bottom-5'>
         <h1
-          class='font-satoshi font-bold leading-10 text-5xl'
+          class='text-5xl font-bold leading-10'
           aria-label='Marselena Sequoia'
         >
           marselena <br />
           <span class='relative left-[2px]'>sequoia</span>
         </h1>
         <h2
-          class='font-satoshi text-xl mt-4 relative left-[2px]'
+          class='relative left-[2px] mt-4 text-xl'
           aria-label='software engineer'
         >
           software engineer{bool() ? '_' : ''}
