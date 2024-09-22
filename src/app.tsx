@@ -7,9 +7,9 @@ export default function App() {
   return (
     <Router
       root={(props) => (
-        <>
+        <main class='flex h-dvh items-center justify-center font-satoshi'>
           <Suspense>{props.children}</Suspense>
-        </>
+        </main>
       )}
     >
       <FileRoutes />
