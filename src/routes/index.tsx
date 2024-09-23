@@ -29,19 +29,28 @@ export default function Home() {
       <ul class='mt-3'>
         <li>
           <Link
+            label='Lenapehoking'
+            href='https://en.wikipedia.org/wiki/Lenapehoking'
+            src='/logos/maptag.svg'
+            srcDark='/logos/maptag-dark.svg'
+            alt=''
+          />
+        </li>
+        <li>
+          <Link
             label='█████'
             src='/logos/mail.svg'
-            srcDark='/logos/mail-white.svg'
-            alt='email icon'
+            srcDark='/logos/mail-dark.svg'
+            alt=''
           />
         </li>
         <li>
           <Link
             label='marsbird'
             href='https://github.com/marsbird'
-            src='/logos/github-mark.svg'
-            srcDark='/logos/github-mark-white.svg'
-            alt='GitHub logo'
+            src='/logos/github.svg'
+            srcDark='/logos/github-dark.svg'
+            alt=''
           />
         </li>
       </ul>
