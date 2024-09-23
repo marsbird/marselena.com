@@ -15,7 +15,7 @@ const Link: Component<{
         src={props.srcDark}
         alt={props.alt}
       />
-      <p class='text-xs font-light italic'>{props.label} </p>
+      <p class='text-xs font-light'>{props.label} </p>
     </a>
   );
 };
