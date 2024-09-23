@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     fontFamily: {
       satoshi: ['Satoshi-Variable', 'sans-serif'],
-      satoshiItalic: ['Satoshi-VariableItalic', 'sans-serif'],
     },
     colors: {
       light: '#d6dbdc',
