@@ -1,4 +1,5 @@
 import { createSignal, onCleanup } from 'solid-js';
+import Link from '~/components/Link';
 
 export default function Home() {
   const [bool, setBool] = createSignal(false);
@@ -25,19 +26,25 @@ export default function Home() {
           software engineer{bool() ? '_' : ''}
         </h2>
       </div>
-      <a class='mt-3 flex items-center' href='https://github.com/marsbird'>
-        <img
-          class='mr-1 hidden size-3 dark:inline'
-          src='/logos/github-mark-white.svg'
-          alt='GitHub logo'
-        />
-        <img
-          class='mr-1 size-3 dark:hidden'
-          src='/logos/github-mark.svg'
-          alt='GitHub logo'
-        />
-        <p class='font-satoshiItalic text-xs font-light'>marsbird </p>
-      </a>
+      <ul class='mt-3'>
+        <li>
+          <Link
+            label='█████'
+            src='/logos/mail.svg'
+            srcDark='/logos/mail-white.svg'
+            alt='email icon'
+          />
+        </li>
+        <li>
+          <Link
+            label='marsbird'
+            href='https://github.com/marsbird'
+            src='/logos/github-mark.svg'
+            srcDark='/logos/github-mark-white.svg'
+            alt='GitHub logo'
+          />
+        </li>
+      </ul>
     </div>
   );
 }
