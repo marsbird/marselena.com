@@ -17,8 +17,8 @@ export default function Home() {
           class='text-5xl font-bold leading-10'
           aria-label='Marselena Sequoia'
         >
-          {/* push "marselena" slightly left so the letters in "sequoia" line up perfectly */}
-          <span class='relative right-[2px]'>marselena</span> <br />
+          {/* shift "marselena" slightly left so the letters in "sequoia" line up perfectly */}
+          <span class='relative right-[2.75px]'>marselena</span> <br />
           sequoia
         </h1>
         <h2 class='mt-4 text-xl' aria-label='software engineer'>
