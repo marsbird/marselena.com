@@ -29,7 +29,7 @@ export default function Home() {
       <ul class='mt-3'>
         <li>
           <Link
-            label='Lenapehoking'
+            label='lenapehoking'
             href='https://en.wikipedia.org/wiki/Lenapehoking'
             src='/logos/maptag.svg'
             srcDark='/logos/maptag-dark.svg'
