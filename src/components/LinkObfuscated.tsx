@@ -7,7 +7,7 @@ const LinkObfuscated: Component<{
   srcDark: string;
 }> = (props) => {
   return (
-    <a class='mb-1 flex items-center'>
+    <a class='mb-1 flex w-fit items-center'>
       <img class='mr-1 size-3 dark:hidden' src={props.src} />
       <img class='mr-1 hidden size-3 dark:inline' src={props.srcDark} />
       {/* https://spencermortensen.com/articles/email-obfuscation/#text-display */}
