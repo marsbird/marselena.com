@@ -30,10 +30,10 @@ export default function Home() {
       <ul class='mt-3'>
         <li>
           <Link
-            label='lenapehoking'
-            href='https://en.wikipedia.org/wiki/Lenapehoking'
-            src='/logos/maptag.svg'
-            srcDark='/logos/maptag-dark.svg'
+            label='marsbird'
+            href='https://github.com/marsbird'
+            src='/logos/github.svg'
+            srcDark='/logos/github-dark.svg'
             alt=''
           />
         </li>
@@ -48,10 +48,10 @@ export default function Home() {
         </li>
         <li>
           <Link
-            label='marsbird'
-            href='https://github.com/marsbird'
-            src='/logos/github.svg'
-            srcDark='/logos/github-dark.svg'
+            label='lenapehoking'
+            href='https://en.wikipedia.org/wiki/Lenapehoking'
+            src='/logos/maptag.svg'
+            srcDark='/logos/maptag-dark.svg'
             alt=''
           />
         </li>
