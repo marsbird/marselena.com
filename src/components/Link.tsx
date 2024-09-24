@@ -2,7 +2,7 @@ import { type Component } from 'solid-js';
 
 const Link: Component<{
   label: string;
-  href?: string;
+  href: string;
   src: string;
   srcDark: string;
   alt: string;

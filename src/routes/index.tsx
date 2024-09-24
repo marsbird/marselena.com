@@ -1,5 +1,6 @@
 import { createSignal, onCleanup } from 'solid-js';
 import Link from '~/components/Link';
+import LinkObfuscated from '~/components/LinkObfuscated';
 
 export default function Home() {
   const [bool, setBool] = createSignal(false);
@@ -37,8 +38,9 @@ export default function Home() {
           />
         </li>
         <li>
-          <Link
-            label='█████'
+          <LinkObfuscated
+            userLabel='marselena'
+            domainLabel='proton.me'
             src='/logos/mail.svg'
             srcDark='/logos/mail-dark.svg'
             alt=''
