@@ -34,6 +34,7 @@ export default function Home() {
             href='https://github.com/marsbird'
             src='/logos/github.svg'
             srcDark='/logos/github-dark.svg'
+            alt='github'
           />
         </li>
         <li>
@@ -42,6 +43,7 @@ export default function Home() {
             domainLabel='proton.me'
             src='/logos/mail.svg'
             srcDark='/logos/mail-dark.svg'
+            alt='email'
           />
         </li>
         <li>
@@ -50,6 +52,7 @@ export default function Home() {
             href='https://en.wikipedia.org/wiki/Lenapehoking'
             src='/logos/maptag.svg'
             srcDark='/logos/maptag-dark.svg'
+            alt='location'
           />
         </li>
       </ul>
