@@ -6,10 +6,11 @@ export default createHandler(() => (
     document={({ assets, children, scripts }) => (
       <html lang='en'>
         <head>
+          <title>marselena sequoia</title>
           <meta charset='utf-8' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <meta name='description' content='software engineer based in lenapehoking, building open-source tools for local community'/>
           <link rel='icon' href='/favicon.ico' />
-          <title>marselena sequoia</title>
           {assets}
         </head>
         <body>
