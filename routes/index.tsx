@@ -26,7 +26,7 @@ export default function Home() {
           <Link
             label="marsbird"
             href="https://github.com/marsbird"
-            src="/logos/github-dark.svg"
+            src="/logos/github.svg"
             alt="github"
           />
         </li>
@@ -34,7 +34,7 @@ export default function Home() {
           <LinkObfuscated
             userLabel="marselena"
             domainLabel="proton.me"
-            src="/logos/mail-dark.svg"
+            src="/logos/mail.svg"
             alt="email"
           />
         </li>
@@ -42,7 +42,7 @@ export default function Home() {
           <Link
             label="lenapehoking"
             href="https://en.wikipedia.org/wiki/Lenapehoking"
-            src="/logos/maptag-dark.svg"
+            src="/logos/maptag.svg"
             alt="location"
           />
         </li>
