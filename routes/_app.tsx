@@ -13,7 +13,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <main class="flex h-dvh items-center justify-center bg-light font-satoshi text-dark dark:bg-dark dark:text-light">
+        <main class="flex h-dvh items-center justify-center bg-[url('images/leaves.jpg')] bg-cover font-satoshi text-dark dark:text-light">
           <Component />
         </main>
       </body>
