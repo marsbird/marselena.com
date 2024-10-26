@@ -1,7 +1,6 @@
-// import { useSignal } from "@preact/signals";
-
 import { Link } from "../components/Link.tsx";
 import { LinkObfuscated } from "../components/LinkObfuscated.tsx";
+import { BlinkingCursor } from "../islands/BlinkingCursor.tsx";
 
 export default function Home() {
   return (
@@ -17,8 +16,7 @@ export default function Home() {
           sequoia
         </h1>
         <h2 class="mt-4 text-xl" aria-label="software engineer">
-          software engineer
-          {/* {bool() ? '_' : ''} */}
+          <BlinkingCursor text={"software engineer"} delay={750} />
         </h2>
       </div>
       <ul class="mt-3">
