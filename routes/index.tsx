@@ -27,7 +27,6 @@ export default function Home() {
             label="marsbird"
             href="https://github.com/marsbird"
             src="/logos/github.svg"
-            srcDark="/logos/github-dark.svg"
             alt="github"
           />
         </li>
@@ -36,7 +35,6 @@ export default function Home() {
             userLabel="marselena"
             domainLabel="proton.me"
             src="/logos/mail.svg"
-            srcDark="/logos/mail-dark.svg"
             alt="email"
           />
         </li>
@@ -45,7 +43,6 @@ export default function Home() {
             label="lenapehoking"
             href="https://en.wikipedia.org/wiki/Lenapehoking"
             src="/logos/maptag.svg"
-            srcDark="/logos/maptag-dark.svg"
             alt="location"
           />
         </li>
