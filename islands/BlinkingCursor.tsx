@@ -8,17 +8,17 @@ interface Props {
 export function BlinkingCursor({ text, delay }: Props) {
   const cursor = signal("_");
 
-  useSignalEffect(()=> {
+  useSignalEffect(() => {
     const interval = setInterval(() => {
       cursor.value = cursor.value ? "" : "_";
     }, delay);
-    return () => clearInterval(interval)
-  })
+    return () => clearInterval(interval);
+  });
 
   return (
     <>
       {text}
-      <span class="select-none">{cursor}</span>     
+      <span class="select-none">{cursor}</span>
     </>
   );
 }

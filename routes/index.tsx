@@ -11,7 +11,10 @@ export default function Home() {
           aria-label="Marselena Sequoia"
         >
           {/* shift "marselena" slightly left so the letters in "sequoia" line up perfectly */}
-          <span class="inline-block transform translate-x-[-2.75px]">marselena</span> <br />
+          <span class="inline-block transform translate-x-[-2.75px]">
+            marselena
+          </span>
+          <br />
           sequoia
         </h1>
         <h2 class="mt-4 text-xl" aria-label="software engineer">
