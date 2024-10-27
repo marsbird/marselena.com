@@ -15,7 +15,7 @@ export function BlinkingCursor({ text, delay }: Props) {
   return (
     <>
       {text}
-      {cursor}
+      <span class="select-none">{cursor}</span>     
     </>
   );
 }
