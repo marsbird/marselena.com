@@ -4,22 +4,21 @@ import { BlinkingCursor } from "../islands/BlinkingCursor.tsx";
 
 export default function Home() {
   return (
-    // slightly bottom-weight the centered div
     <div>
-      <div class="relative bottom-5">
+      <div class="mb-8">
         <h1
           class="text-5xl font-bold leading-10"
           aria-label="Marselena Sequoia"
         >
           {/* shift "marselena" slightly left so the letters in "sequoia" line up perfectly */}
-          <span class="relative right-[2.75px]">marselena</span> <br />
+          <span class="inline-block transform translate-x-[-2.75px]">marselena</span> <br />
           sequoia
         </h1>
         <h2 class="mt-4 text-xl" aria-label="software engineer">
           <BlinkingCursor text={"software engineer"} delay={750} />
         </h2>
       </div>
-      <ul class="mt-3">
+      <ul>
         <li>
           <Link
             label="marsbird"
