@@ -1,4 +1,4 @@
-import { signal } from "@preact/signals";
+import { signal, useSignalEffect } from "@preact/signals";
 
 interface Props {
   text: string;
@@ -8,9 +8,12 @@ interface Props {
 export function BlinkingCursor({ text, delay }: Props) {
   const cursor = signal("_");
 
-  setInterval(() => {
-    cursor.value = cursor.value ? "" : "_";
-  }, delay);
+  useSignalEffect(()=> {
+    const interval = setInterval(() => {
+      cursor.value = cursor.value ? "" : "_";
+    }, delay);
+    return () => clearInterval(interval)
+  })
 
   return (
     <>
