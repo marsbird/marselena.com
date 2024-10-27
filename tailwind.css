@@ -554,32 +554,24 @@ video {
   display: none;
 }
 
-.relative {
-  position: relative;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.right-\[2\.75px\] {
-  right: 2.75px;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mr-1 {
   margin-right: 0.25rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -604,6 +596,21 @@ video {
   width: fit-content;
 }
 
+.translate-x-\[-2\.75px\] {
+  --tw-translate-x: -2.75px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .items-center {
   align-items: center;
 }
@@ -612,9 +619,12 @@ video {
   justify-content: center;
 }
 
-.bg-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(214 219 220 / var(--tw-bg-opacity));
+.bg-\[url\(\'\/static\/images\/leaves\.webp\'\)\] {
+  background-image: url('/static/images/leaves.webp');
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .font-satoshi {
@@ -648,9 +658,9 @@ video {
   line-height: 2.5rem;
 }
 
-.text-dark {
+.text-light {
   --tw-text-opacity: 1;
-  color: rgb(36 33 37 / var(--tw-text-opacity));
+  color: rgb(214 219 220 / var(--tw-text-opacity));
 }
 
 :root {
@@ -658,12 +668,12 @@ video {
 }
 
 @font-face {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
 
   src:
-    url('../public/fonts/Satoshi-Variable.woff2') format('woff2'),
-    url('../public/fonts/Satoshi-Variable.woff') format('woff'),
-    url('../public/fonts/Satoshi-Variable.ttf') format('truetype');
+    url("../static/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("../static/fonts/Satoshi-Variable.woff") format("woff"),
+    url("../static/fonts/Satoshi-Variable.ttf") format("truetype");
 
   font-weight: 300 900;
 
@@ -672,22 +682,13 @@ video {
   font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:inline {
-    display: inline;
-  }
+h2 > span::after {
+  content: "_";
+  animation: blink 1.5s step-end infinite;
+}
 
-  .dark\:hidden {
-    display: none;
-  }
-
-  .dark\:bg-dark {
-    --tw-bg-opacity: 1;
-    background-color: rgb(36 33 37 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-light {
-    --tw-text-opacity: 1;
-    color: rgb(214 219 220 / var(--tw-text-opacity));
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
