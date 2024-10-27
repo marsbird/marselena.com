@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "tailwind": "tailwindcss -i ./index.css -o ./tailwind.css"
+  },
+  "imports": {
+    "autoprefixer": "npm:autoprefixer@^10.4.20",
+    "postcss": "npm:postcss@^8.4.47",
+    "tailwindcss": "npm:tailwindcss@^3.4.14"
+  }
+}
