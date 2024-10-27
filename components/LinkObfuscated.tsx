@@ -1,5 +1,3 @@
-import { JSX } from "preact";
-
 interface Props {
   userLabel: string;
   domainLabel: string;
@@ -12,7 +10,7 @@ export function LinkObfuscated({
   domainLabel,
   src,
   alt,
-}: Props): JSX.Element {
+}: Props) {
   return (
     <div class="mb-1 flex w-fit items-center">
       <img

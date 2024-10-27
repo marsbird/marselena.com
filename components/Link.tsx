@@ -1,5 +1,3 @@
-import { JSX } from "preact";
-
 interface Props {
   label: string;
   href: string;
@@ -12,7 +10,7 @@ export function Link({
   href,
   src,
   alt,
-}: Props): JSX.Element {
+}: Props) {
   return (
     <a class="mb-1 flex w-fit items-center" href={href}>
       <img
