@@ -14,7 +14,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <main class="flex h-dvh items-center justify-center bg-[url('images/leaves.jpg')] bg-cover font-satoshi text-light">
+        <main class="flex h-dvh items-center justify-center bg-[url('images/leaves.webp')] bg-cover font-satoshi text-light">
           <Component />
         </main>
       </body>
