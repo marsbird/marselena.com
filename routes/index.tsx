@@ -1,6 +1,6 @@
 import { Link } from "../components/Link.tsx";
 import { LinkObfuscated } from "../components/LinkObfuscated.tsx";
-import { BlinkingCursor } from "../islands/BlinkingCursor.tsx";
+import { Cursor } from "../islands/Cursor/Cursor.tsx";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
           sequoia
         </h1>
         <h2 class="mt-4 text-xl" aria-label="software engineer">
-          <BlinkingCursor text={"software engineer"} delay={750} />
+          <Cursor text={"software engineer"} delay={750} />
         </h2>
       </div>
       <ul>

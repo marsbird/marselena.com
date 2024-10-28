@@ -5,7 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $BlinkingCursor from "./islands/BlinkingCursor.tsx";
+import * as $Cursor_Cursor from "./islands/Cursor/Cursor.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -15,7 +15,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/BlinkingCursor.tsx": $BlinkingCursor,
+    "./islands/Cursor/Cursor.tsx": $Cursor_Cursor,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
