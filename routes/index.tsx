@@ -1,5 +1,5 @@
-import { Link } from "../components/Link.tsx";
-import { LinkObfuscated } from "../components/LinkObfuscated.tsx";
+import { Link } from "../components/Link/Link.tsx";
+import { LinkObfuscated } from "../components/LinkObfuscated/LinkObfuscated.tsx";
 import { Cursor } from "../islands/Cursor/Cursor.tsx";
 
 export default function Home() {
