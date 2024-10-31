@@ -5,7 +5,7 @@ interface Props {
   delay: number;
 }
 
-export function BlinkingCursor({ text, delay }: Props) {
+export function Cursor({ text, delay }: Props) {
   const cursor = signal("_");
 
   useSignalEffect(() => {
