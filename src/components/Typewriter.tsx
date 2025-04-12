@@ -32,7 +32,7 @@ export default function Typewriter({
       // after initial delay, start typing between 1 and 1.5 typeSpeed
       const randomSpeed = typeSpeed * (1 + Math.random() * 0.5);
       id = setTimeout(() => {
-        setDisplayText((prev) => prev + text[i]);
+        setDisplayText(displayText + text[i]);
         setI((prev) => prev + 1);
       }, randomSpeed);
     } else {
@@ -45,6 +45,7 @@ export default function Typewriter({
 
     return () => clearTimeout(id);
   }, [
+    displayText,
     displayCursor,
     i,
     isDelayed,
