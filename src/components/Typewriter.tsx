@@ -21,7 +21,7 @@ export default function Typewriter({
   const [isDelayed, setIsDelayed] = useState(true);
 
   useEffect(() => {
-    let id: NodeJS.Timeout;
+    let id: ReturnType<typeof setTimeout>;
 
     if (isDelayed) {
       // on initial load, add a delay
