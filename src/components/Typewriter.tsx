@@ -20,41 +20,39 @@ export default function Typewriter({
   const [i, setI] = useState(0);
   const [isDelayed, setIsDelayed] = useState(true);
 
+  // on initial load, add a delay
   useEffect(() => {
-    let id: ReturnType<typeof setTimeout>;
-
     if (isDelayed) {
-      // on initial load, add a delay
-      id = setTimeout(() => {
+      const id = setTimeout(() => {
         setIsDelayed(false);
       }, delay);
-    } else if (i < text.length) {
-      // after initial delay, start typing between 1 and 1.5 typeSpeed
-      const randomSpeed = typeSpeed * (1 + Math.random() * 0.5);
-      id = setTimeout(() => {
-        setDisplayText(displayText + text[i]);
-        setI((prev) => prev + 1);
-      }, randomSpeed);
-    } else {
-      // after typing concludes, blink cursor
-      id = setTimeout(
-        () => setDisplayCursor(displayCursor ? "" : cursor),
-        cursorSpeed,
-      );
+      return () => clearTimeout(id);
     }
+  }, [isDelayed, delay]);
 
-    return () => clearTimeout(id);
-  }, [
-    displayText,
-    displayCursor,
-    i,
-    isDelayed,
-    text,
-    cursor,
-    delay,
-    typeSpeed,
-    cursorSpeed,
-  ]);
+  // after initial delay, start typing between 1 and 1.5 typeSpeed
+  useEffect(() => {
+    if (!isDelayed && i < text.length) {
+      const id = setTimeout(
+        () => {
+          setDisplayText(displayText + text[i]);
+          setI(i + 1);
+        },
+        typeSpeed * (1 + Math.random() * 0.5),
+      );
+      return () => clearTimeout(id);
+    }
+  }, [isDelayed, text, displayText, i, typeSpeed]);
+
+  // after typing concludes, blink cursor
+  useEffect(() => {
+    if (!isDelayed && i >= text.length) {
+      const id = setTimeout(() => {
+        setDisplayCursor(displayCursor ? "" : cursor);
+      }, cursorSpeed);
+      return () => clearTimeout(id);
+    }
+  }, [isDelayed, i, text, displayCursor, cursor, cursorSpeed]);
 
   return (
     <>
