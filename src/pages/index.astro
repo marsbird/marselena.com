@@ -1,49 +1,17 @@
 ---
 import Typewriter from "../components/Typewriter.tsx";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Content } from "../content/bio.md";
 ---
 
 <BaseLayout>
-  <div class="mt-12">
-    <h1 class="font-bold tracking-tight text-6xl">marselena sequoia</h1>
-    <h2 class="mt-2 text-2xl">
-      <Typewriter client:load text="software engineer" />
-    </h2>
-    <ul>
-      <li class="mt-12">
-        Hello! I'm an educator and engineer living in
-        <a
-          class="underline decoration-slate-950/20 decoration-2"
-          href="https://en.wikipedia.org/wiki/Lenapehoking"
-        >
-          Lenapehoking</a
-        >
-        where I spend most of my time either building local community or teaching
-        how to build for the modern web at
-        <a
-          class="underline decoration-slate-950/20 decoration-2"
-          href="https://codesmith.io"
-        >
-          Codesmith</a
-        >.
-      </li>
-      <li class="mt-4">
-        I also love birdwatching, reading fantasy novels, eating good food,
-        finding a new favorite puzzle game, walking to the libray, and taking a
-        deep breath. (Although you can usually just find me sitting under a big
-        tree in <a
-          class="underline decoration-slate-950/20 decoration-2"
-          href="https://www.prospectpark.org/visit-the-park/park-map/"
-          >Prospect Park</a
-        >.)
-      </li>
-      <!-- https://spencermortensen.com/articles/email-obfuscation/#text-display -->
-      <li class="mt-4">
-        Contact:
-        <b class="hidden">contact</b>marselena<b class="hidden">me</b>@<b
-          class="hidden">here</b
-        >proton.me
-      </li>
-    </ul>
-  </div>
+  <h1 class="font-bold tracking-tight text-6xl mt-8 lowercase">
+    Marselena Sequoia
+  </h1>
+  <h2 class="mt-2 text-2xl">
+    <Typewriter client:load text="software engineer" />
+  </h2>
+  <article class="prose mt-8">
+    <Content />
+  </article>
 </BaseLayout>
