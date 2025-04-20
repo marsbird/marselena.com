@@ -21,13 +21,11 @@ import "../styles/globals.css";
     class="bg-amber-100 bg-gradient-to-tr to-amber-200 text-slate-800 flex flex-col items-center min-h-dvh"
   >
     <main class="max-w-4xl mx-4">
-      <header class="p-4 flex justify-center">
-        <ul class="flex items-center">
-          <li class="px-4"><a href="/">home</a></li>
-          <!-- <li class="px-4"><a href="/blog">blog</a></li> -->
-          <!-- <li class="px-4"><a href="/resume">resume</a></li> -->
-        </ul>
-      </header>
+      <nav class="my-4 flex justify-center items-center">
+        <a class="px-4" href="/">home</a>
+        <a class="px-4" href="/blog">blog</a>
+        <a class="px-4" href="/resume">resume</a>
+      </nav>
       <hr class="opacity-20" />
       <slot />
     </main>
