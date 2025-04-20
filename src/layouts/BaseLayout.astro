@@ -1,6 +1,5 @@
 ---
 import "../styles/globals.css";
-import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -12,8 +11,14 @@ import Header from "../components/Header.astro";
     <title>marselena sequoia</title>
   </head>
   <body class="bg-slate-50 text-slate-950 flex flex-col items-center">
-    <main class="w-1/2 max-w-3xl">
-      <Header />
+    <main class="max-w-4xl mx-4">
+      <header class="p-4 flex justify-center">
+        <ul class="flex items-center">
+          <li class="px-4"><a href="/">home</a></li>
+          <li class="px-4"><a href="/blog">blog</a></li>
+        </ul>
+      </header>
+      <hr class="opacity-20" />
       <slot />
     </main>
   </body>
