@@ -1,8 +1,0 @@
-{
-  "files": {
-    "ignore": [".astro", "dist", "node_modules"]
-  },
-  "formatter": {
-    "indentStyle": "space"
-  }
-}
