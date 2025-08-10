@@ -18,12 +18,13 @@
   <body
     class="bg-amber-50 bg-gradient-to-tr to-amber-100 text-slate-800 flex flex-col items-center min-h-dvh"
   >
-    <main class="mx-4 min-h-dvh">
+    <main class="mx-4 mb-10 min-h-dvh">
       <nav class="my-4 flex justify-center items-center">
         <a class="px-4 hover:underline" href="/">home</a>
-        <!-- <a class="px-4 hover:underline" href="/blog">blog</a> -->
       </nav>
+
       <hr class="opacity-20" />
+
       <header>
         <h1 class="font-bold tracking-tight text-6xl mt-8 lowercase">
           Marselena Sequoia
@@ -32,38 +33,59 @@
           |
         </p>
       </header>
+
       <article class="prose my-8">
         <p>
           Hi! 👋 I'm an educator and engineer currently working on curriculum at
-          <a href="https://codesmith.io">Codesmith</a>, thinking deeply about how best to
-          teach engineering for the modern web. I write code mostly in
-          TypeScript, and I write prose mostly in English.
+          <a href="https://codesmith.io">Codesmith</a>, thinking deeply about
+          how best to teach engineering for the modern web. I write code mostly
+          in TypeScript, and I write prose mostly in English.
         </p>
 
         <p>
-          I live in <a href="https://en.wikipedia.org/wiki/Lenapehoking">Lenapehoking</a>,
+          I live in
+          <a href="https://en.wikipedia.org/wiki/Lenapehoking">Lenapehoking</a>,
           where I spend my time doing many of the things I love: birdwatching,
           reading fantasy novels, eating good food, finding a new favorite
           puzzle game, going on a walk to the library, laughing with friends,
           and taking a deep breath. When in doubt, you can usually find me
-          sitting under a big tree, often in <a href="https://www.prospectpark.org/visit-the-park/park-map/">Prospect
-          Park</a>.
-        </p>
-
-        <p>
-          This website is ad-free, sets no cookies and uses no trackers. Take a
-          look at my <a href="https://github.com/marsbird">GitHub</a> profile for the
-          source code and explore what else I've been working on. And if you've
-          made it this far and want to get in touch directly, reach out at
-          contact@marselena.com.
+          sitting under a big tree, often in
+          <a href="https://www.prospectpark.org/visit-the-park/park-map/"
+            >Prospect Park</a
+          >.
         </p>
       </article>
-      <h2 class="font-bold text-xl mt-8">
-        Recently, I've been reading:
-      </h2>
-      <div id="hardcover" class="flex flex-wrap items-center justify-between gap-8 mx-4 my-6" >
-        <div id="currentlyReading" class="flex items-center justify-center gap-4" ></div>
-        <div id="lastRead" class="flex items-center justify-center gap-4" ></div>
+
+      <article>
+        <p class="prose">
+          Here's what I've been reading recently, courtesy of
+          <a href="https://hardcover.app/@marselena">Hardcover</a>:
+        </p>
+        <div
+          id="hardcover"
+          class="flex flex-wrap items-center justify-between gap-8 mx-4 my-6 min-h-40"
+        >
+          <div
+            id="currentlyReading"
+            class="flex items-center justify-center gap-4"
+          ></div>
+          <!-- <hr class="opacity-20 rotate-90 w-24" /> -->
+          <div
+            id="lastRead"
+            class="flex items-center justify-center gap-4"
+          ></div>
+        </div>
+      </article>
+
+      <article class="prose mt-8">
+        <p>
+          This website is ad-free, sets no cookies and uses no trackers. Take a
+          look at my <a href="https://github.com/marsbird">GitHub</a> profile
+          for the source code and explore what else I've been working on. And if
+          you've made it this far and want to get in touch directly, reach out
+          at contact@marselena.com.
+        </p>
+      </article>
     </main>
   </body>
 </html>
