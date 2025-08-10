@@ -45,7 +45,7 @@ app.get("/api/hardcover/lastRead", async () => {
     user_books(
 			where: {user: {username: {_eq: "${username}"}}, status_id: {_eq: 3}},
 			order_by: {last_read_date: desc_nulls_last},
-			limit: 5
+			limit: 4
 		) {
 			rating
 			updated_at

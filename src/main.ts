@@ -47,8 +47,13 @@ async function getBooks(
   data.data.user_books.forEach((book) => {
     const imgElement = document.createElement("img");
     imgElement.src = book.book.image.url;
-    imgElement.classList = "w-1/10";
-    hardcoverElement.appendChild(imgElement);
+    imgElement.classList = "w-24 rounded hover:opacity-90";
+    
+    const linkElement = document.createElement("a");
+    linkElement.href = `https://hardcover.app/books/${book.book.slug}`
+    
+    hardcoverElement.appendChild(linkElement);
+    linkElement.appendChild(imgElement);
   });
 }
 
@@ -59,8 +64,11 @@ if (typewriterElement) {
   typewriter(typewriterElement, "software engineer", 80, 750);
 }
 
-const hardcoverElement = document.querySelector("#hardcover");
-if (hardcoverElement) {
-  getBooks(hardcoverElement, "currentlyReading");
-  getBooks(hardcoverElement, "lastRead");
+const currentlyReadingElement = document.querySelector("#currentlyReading");
+const lastReadElement = document.querySelector("#lastRead");
+if (currentlyReadingElement) {
+  getBooks(currentlyReadingElement, "currentlyReading");
+}
+if (lastReadElement) {
+  getBooks(lastReadElement, "lastRead");
 }
