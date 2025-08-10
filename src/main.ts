@@ -37,9 +37,30 @@ function typewriter(
   }, typingSpeed);
 }
 
+async function getBooks(
+  hardcoverElement: Element,
+  endpoint: "currentlyReading" | "lastRead",
+) {
+  const response = await fetch(`/api/hardcover/${endpoint}`);
+  const data = await response.json();
+
+  data.data.user_books.forEach((book) => {
+    const imgElement = document.createElement("img");
+    imgElement.src = book.book.image.url;
+    imgElement.classList = "w-1/10";
+    hardcoverElement.appendChild(imgElement);
+  });
+}
+
 // Find the typewriter element and start the effect
 const typewriterElement = document.querySelector("#typewriter");
 if (typewriterElement) {
   // Start typewriter effect: "software engineer" at 80ms per character, 750ms cursor blink
   typewriter(typewriterElement, "software engineer", 80, 750);
+}
+
+const hardcoverElement = document.querySelector("#hardcover");
+if (hardcoverElement) {
+  getBooks(hardcoverElement, "currentlyReading");
+  getBooks(hardcoverElement, "lastRead");
 }
