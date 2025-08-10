@@ -1,9 +1,17 @@
 import Fastify from "fastify";
+import fastifyStatic from "@fastify/static";
 import dotenv from "dotenv";
+import path from "node:path";
 
 dotenv.config();
 const key = process.env.HARDCOVER_APIKEY;
+if (!key) throw "Error: HARDCOVER_APIKEY not found"
+
 const app = Fastify();
+
+app.register(fastifyStatic, {
+  root: path.resolve(import.meta.dirname, "../dist"),
+});
 
 app.get("/api/hardcover/currentlyReading", async () => {
   const username = "marselena";
