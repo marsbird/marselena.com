@@ -1,11 +1,11 @@
 import Fastify from "fastify";
 import fastifyStatic from "@fastify/static";
-import dotenv from "dotenv";
+import dotenvx from "@dotenvx/dotenvx";
 import path from "node:path";
 
-dotenv.config({ quiet: true });
-const key = process.env.HARDCOVER_APIKEY;
-if (!key) throw "Error: HARDCOVER_APIKEY not found";
+dotenvx.config({ quiet: true });
+const key = process.env.HARDCOVER_API_KEY;
+if (!key) throw "Error: HARDCOVER_API_KEY not found";
 
 const app = Fastify();
 
